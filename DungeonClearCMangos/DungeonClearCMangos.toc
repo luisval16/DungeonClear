@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: DungeonClear CMaNGOS
+## Notes: Vanilla 1.12.1 visual controller for CMaNGOS PlayerBots DungeonClear
+## Author: DungeonClear Project
+## Version: 0.7.0-routes-r1
+## SavedVariables: DungeonClearCMangosDB
+
+DungeonClearCMangos.lua
