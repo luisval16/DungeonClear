@@ -1,0 +1,1178 @@
+{
+  "schema_version": 1,
+  "id": "scarlet_monastery.graveyard.v1",
+  "revision": "graveyard-navmesh-r1",
+  "label": "Scarlet Monastery Graveyard",
+  "map_id": 189,
+  "enabled": true,
+  "validated": true,
+  "entities": {
+    "vishas": {
+      "kind": "creature",
+      "entry": 3983,
+      "spawn_low": 1890010,
+      "dynamic_spawn": false,
+      "anchor": "vishas_anchor",
+      "search_radius": 6,
+      "authoritative_anchor": true,
+      "evidence": "Phase11 installed DB snapshot; GUID 1890010. No runtime floor claim."
+    },
+    "thalnos": {
+      "kind": "creature",
+      "entry": 4543,
+      "spawn_low": 1890315,
+      "dynamic_spawn": false,
+      "anchor": "thalnos_anchor",
+      "search_radius": 6,
+      "authoritative_anchor": true,
+      "evidence": "Phase11 installed DB snapshot; GUID 1890315. No runtime floor claim."
+    }
+  },
+  "points": {
+    "entrance": {
+      "map_id": 189,
+      "x": 1687.27001953125,
+      "y": 1050.0899658203125,
+      "z": 18.67902946472168,
+      "o": 1.5708,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c"
+    },
+    "vishas_anchor": {
+      "map_id": 189,
+      "x": 1786.55,
+      "y": 1124.44,
+      "z": 7.57362,
+      "o": 4.81711,
+      "floor_verified": false,
+      "evidence": "Installed creature DB GUID 1890010; spawn anchor only, staging/path unverified."
+    },
+    "thalnos_anchor": {
+      "map_id": 189,
+      "x": 1820.34,
+      "y": 1416.71,
+      "z": -7.91731,
+      "o": 3.15905,
+      "floor_verified": false,
+      "evidence": "Installed creature DB GUID 1890315; spawn anchor only, staging/path unverified."
+    },
+    "vishas_wp_000": {
+      "map_id": 189,
+      "x": 1687.27001953125,
+      "y": 1050.0899658203125,
+      "z": 18.67902946472168,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503601774854316"
+    },
+    "vishas_wp_001": {
+      "map_id": 189,
+      "x": 1689.5999755859375,
+      "y": 1051.466552734375,
+      "z": 18.67902946472168,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503601774854312"
+    },
+    "vishas_wp_002": {
+      "map_id": 189,
+      "x": 1691.7332763671875,
+      "y": 1052.533203125,
+      "z": 18.67902946472168,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503601774854314"
+    },
+    "vishas_wp_003": {
+      "map_id": 189,
+      "x": 1701.066650390625,
+      "y": 1055.466552734375,
+      "z": 18.67902946472168,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503601774854315"
+    },
+    "vishas_wp_004": {
+      "map_id": 189,
+      "x": 1702.38427734375,
+      "y": 1066.666748046875,
+      "z": 18.67902946472168,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370513"
+    },
+    "vishas_wp_005": {
+      "map_id": 189,
+      "x": 1703.2626953125,
+      "y": 1074.1334228515625,
+      "z": 15.47903060913086,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370520"
+    },
+    "vishas_wp_006": {
+      "map_id": 189,
+      "x": 1703.6077880859375,
+      "y": 1077.0667724609375,
+      "z": 14.145698547363281,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370514"
+    },
+    "vishas_wp_007": {
+      "map_id": 189,
+      "x": 1704.0469970703125,
+      "y": 1080.800048828125,
+      "z": 12.279031753540039,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370511"
+    },
+    "vishas_wp_008": {
+      "map_id": 189,
+      "x": 1704.39208984375,
+      "y": 1083.7333984375,
+      "z": 10.679033279418945,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370523"
+    },
+    "vishas_wp_009": {
+      "map_id": 189,
+      "x": 1704.89404296875,
+      "y": 1088.0001220703125,
+      "z": 8.545700073242188,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370532"
+    },
+    "vishas_wp_010": {
+      "map_id": 189,
+      "x": 1705.333251953125,
+      "y": 1091.7333984375,
+      "z": 7.212366104125977,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370530"
+    },
+    "vishas_wp_011": {
+      "map_id": 189,
+      "x": 1706.5711669921875,
+      "y": 1092.0001220703125,
+      "z": 7.737743854522705,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370529"
+    },
+    "vishas_wp_012": {
+      "map_id": 189,
+      "x": 1706.6666259765625,
+      "y": 1092.020751953125,
+      "z": 7.743008136749268,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370537"
+    },
+    "vishas_wp_013": {
+      "map_id": 189,
+      "x": 1712.4356689453125,
+      "y": 1093.2637939453125,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370545"
+    },
+    "vishas_wp_014": {
+      "map_id": 189,
+      "x": 1712.5206298828125,
+      "y": 1093.2821044921875,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370536"
+    },
+    "vishas_wp_015": {
+      "map_id": 189,
+      "x": 1726.0643310546875,
+      "y": 1096.2003173828125,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370535"
+    },
+    "vishas_wp_016": {
+      "map_id": 189,
+      "x": 1726.933349609375,
+      "y": 1096.3875732421875,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370544"
+    },
+    "vishas_wp_017": {
+      "map_id": 189,
+      "x": 1728.0,
+      "y": 1096.617431640625,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370550"
+    },
+    "vishas_wp_018": {
+      "map_id": 189,
+      "x": 1740.691650390625,
+      "y": 1099.35205078125,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370547"
+    },
+    "vishas_wp_019": {
+      "map_id": 189,
+      "x": 1741.5247802734375,
+      "y": 1099.5316162109375,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370556"
+    },
+    "vishas_wp_020": {
+      "map_id": 189,
+      "x": 1749.333251953125,
+      "y": 1101.214111328125,
+      "z": 7.338672161102295,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370637"
+    },
+    "vishas_wp_021": {
+      "map_id": 189,
+      "x": 1752.518798828125,
+      "y": 1101.9005126953125,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370644"
+    },
+    "vishas_wp_022": {
+      "map_id": 189,
+      "x": 1753.5999755859375,
+      "y": 1102.1334228515625,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370640"
+    },
+    "vishas_wp_023": {
+      "map_id": 189,
+      "x": 1757.066650390625,
+      "y": 1104.533447265625,
+      "z": 7.212366104125977,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370643"
+    },
+    "vishas_wp_024": {
+      "map_id": 189,
+      "x": 1760.9522705078125,
+      "y": 1109.3333740234375,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370657"
+    },
+    "vishas_wp_025": {
+      "map_id": 189,
+      "x": 1760.9998779296875,
+      "y": 1109.3922119140625,
+      "z": 7.745699405670166,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370650"
+    },
+    "vishas_wp_026": {
+      "map_id": 189,
+      "x": 1761.5999755859375,
+      "y": 1110.1334228515625,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370655"
+    },
+    "vishas_wp_027": {
+      "map_id": 189,
+      "x": 1766.13330078125,
+      "y": 1115.2000732421875,
+      "z": 8.279033660888672,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370652"
+    },
+    "vishas_wp_028": {
+      "map_id": 189,
+      "x": 1770.6666259765625,
+      "y": 1118.933349609375,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370833"
+    },
+    "thalnos_wp_000": {
+      "map_id": 189,
+      "x": 1786.550048828125,
+      "y": 1124.43994140625,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370840"
+    },
+    "thalnos_wp_001": {
+      "map_id": 189,
+      "x": 1787.958740234375,
+      "y": 1127.91552734375,
+      "z": 7.802069187164307,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370828"
+    },
+    "thalnos_wp_002": {
+      "map_id": 189,
+      "x": 1787.992919921875,
+      "y": 1128.0001220703125,
+      "z": 7.84955358505249,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370822"
+    },
+    "thalnos_wp_003": {
+      "map_id": 189,
+      "x": 1788.5333251953125,
+      "y": 1129.3333740234375,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370820"
+    },
+    "thalnos_wp_004": {
+      "map_id": 189,
+      "x": 1788.2666015625,
+      "y": 1130.666748046875,
+      "z": 8.012367248535156,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370854"
+    },
+    "thalnos_wp_005": {
+      "map_id": 189,
+      "x": 1787.7332763671875,
+      "y": 1132.0,
+      "z": 8.279033660888672,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370879"
+    },
+    "thalnos_wp_006": {
+      "map_id": 189,
+      "x": 1787.5574951171875,
+      "y": 1133.60009765625,
+      "z": 8.191142082214355,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370861"
+    },
+    "thalnos_wp_007": {
+      "map_id": 189,
+      "x": 1786.8502197265625,
+      "y": 1140.03564453125,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370858"
+    },
+    "thalnos_wp_008": {
+      "map_id": 189,
+      "x": 1786.796142578125,
+      "y": 1140.5283203125,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370878"
+    },
+    "thalnos_wp_009": {
+      "map_id": 189,
+      "x": 1786.6883544921875,
+      "y": 1141.5087890625,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370873"
+    },
+    "thalnos_wp_010": {
+      "map_id": 189,
+      "x": 1785.6058349609375,
+      "y": 1151.359619140625,
+      "z": 7.852072238922119,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370871"
+    },
+    "thalnos_wp_011": {
+      "map_id": 189,
+      "x": 1785.5355224609375,
+      "y": 1152.0,
+      "z": 8.043623924255371,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370891"
+    },
+    "thalnos_wp_012": {
+      "map_id": 189,
+      "x": 1785.066650390625,
+      "y": 1156.2667236328125,
+      "z": 7.745698928833008,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370892"
+    },
+    "thalnos_wp_013": {
+      "map_id": 189,
+      "x": 1785.066650390625,
+      "y": 1161.60009765625,
+      "z": 7.212366104125977,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370884"
+    },
+    "thalnos_wp_014": {
+      "map_id": 189,
+      "x": 1785.8544921875,
+      "y": 1162.933349609375,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370889"
+    },
+    "thalnos_wp_015": {
+      "map_id": 189,
+      "x": 1788.0,
+      "y": 1166.564208984375,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370885"
+    },
+    "thalnos_wp_016": {
+      "map_id": 189,
+      "x": 1790.327392578125,
+      "y": 1170.502685546875,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627370880"
+    },
+    "thalnos_wp_017": {
+      "map_id": 189,
+      "x": 1792.0,
+      "y": 1173.3333740234375,
+      "z": 6.945699691772461,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371068"
+    },
+    "thalnos_wp_018": {
+      "map_id": 189,
+      "x": 1795.199951171875,
+      "y": 1174.4000244140625,
+      "z": 7.212366104125977,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371061"
+    },
+    "thalnos_wp_019": {
+      "map_id": 189,
+      "x": 1795.4013671875,
+      "y": 1178.4000244140625,
+      "z": 8.812366485595703,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371071"
+    },
+    "thalnos_wp_020": {
+      "map_id": 189,
+      "x": 1795.602783203125,
+      "y": 1182.4000244140625,
+      "z": 10.679033279418945,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371062"
+    },
+    "thalnos_wp_021": {
+      "map_id": 189,
+      "x": 1795.737060546875,
+      "y": 1185.066650390625,
+      "z": 12.012365341186523,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371063"
+    },
+    "thalnos_wp_022": {
+      "map_id": 189,
+      "x": 1795.9385986328125,
+      "y": 1189.066650390625,
+      "z": 14.145698547363281,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371067"
+    },
+    "thalnos_wp_023": {
+      "map_id": 189,
+      "x": 1796.0728759765625,
+      "y": 1191.7333984375,
+      "z": 15.47903060913086,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371066"
+    },
+    "thalnos_wp_024": {
+      "map_id": 189,
+      "x": 1796.2205810546875,
+      "y": 1194.666748046875,
+      "z": 16.81236457824707,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371073"
+    },
+    "thalnos_wp_025": {
+      "map_id": 189,
+      "x": 1796.264404296875,
+      "y": 1195.5367431640625,
+      "z": 17.3456974029541,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371074"
+    },
+    "thalnos_wp_026": {
+      "map_id": 189,
+      "x": 1796.3682861328125,
+      "y": 1197.60009765625,
+      "z": 18.412363052368164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371076"
+    },
+    "thalnos_wp_027": {
+      "map_id": 189,
+      "x": 1797.147216796875,
+      "y": 1213.066650390625,
+      "z": 18.412363052368164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371077"
+    },
+    "thalnos_wp_028": {
+      "map_id": 189,
+      "x": 1797.1611328125,
+      "y": 1213.3431396484375,
+      "z": 18.412363052368164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371079"
+    },
+    "thalnos_wp_029": {
+      "map_id": 189,
+      "x": 1797.294921875,
+      "y": 1216.0,
+      "z": 18.412363052368164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371081"
+    },
+    "thalnos_wp_030": {
+      "map_id": 189,
+      "x": 1797.333984375,
+      "y": 1216.77587890625,
+      "z": 18.541671752929688,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371083"
+    },
+    "thalnos_wp_031": {
+      "map_id": 189,
+      "x": 1798.3692626953125,
+      "y": 1237.3333740234375,
+      "z": 18.57159423828125,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371086"
+    },
+    "thalnos_wp_032": {
+      "map_id": 189,
+      "x": 1799.3585205078125,
+      "y": 1256.9761962890625,
+      "z": 18.578096389770508,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371087"
+    },
+    "thalnos_wp_033": {
+      "map_id": 189,
+      "x": 1799.3883056640625,
+      "y": 1257.5684814453125,
+      "z": 18.578765869140625,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371084"
+    },
+    "thalnos_wp_034": {
+      "map_id": 189,
+      "x": 1799.443603515625,
+      "y": 1258.666748046875,
+      "z": 18.226272583007812,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371089"
+    },
+    "thalnos_wp_035": {
+      "map_id": 189,
+      "x": 1799.5260009765625,
+      "y": 1260.3028564453125,
+      "z": 18.59415054321289,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371094"
+    },
+    "thalnos_wp_036": {
+      "map_id": 189,
+      "x": 1800.4119873046875,
+      "y": 1277.89697265625,
+      "z": 18.717538833618164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371091"
+    },
+    "thalnos_wp_037": {
+      "map_id": 189,
+      "x": 1800.5179443359375,
+      "y": 1280.0,
+      "z": 19.3178768157959,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371097"
+    },
+    "thalnos_wp_038": {
+      "map_id": 189,
+      "x": 1801.4730224609375,
+      "y": 1298.965087890625,
+      "z": 18.915855407714844,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371096"
+    },
+    "thalnos_wp_039": {
+      "map_id": 189,
+      "x": 1801.49658203125,
+      "y": 1299.4339599609375,
+      "z": 18.916444778442383,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371095"
+    },
+    "thalnos_wp_040": {
+      "map_id": 189,
+      "x": 1801.59228515625,
+      "y": 1301.3333740234375,
+      "z": 18.91883659362793,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371101"
+    },
+    "thalnos_wp_041": {
+      "map_id": 189,
+      "x": 1802.3065185546875,
+      "y": 1315.5157470703125,
+      "z": 19.208269119262695,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371100"
+    },
+    "thalnos_wp_042": {
+      "map_id": 189,
+      "x": 1802.6666259765625,
+      "y": 1322.6666259765625,
+      "z": 18.945695877075195,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371108"
+    },
+    "thalnos_wp_043": {
+      "map_id": 189,
+      "x": 1802.58154296875,
+      "y": 1324.7646484375,
+      "z": 18.952348709106445,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371109"
+    },
+    "thalnos_wp_044": {
+      "map_id": 189,
+      "x": 1802.370361328125,
+      "y": 1329.9730224609375,
+      "z": 19.014638900756836,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371111"
+    },
+    "thalnos_wp_045": {
+      "map_id": 189,
+      "x": 1802.3602294921875,
+      "y": 1330.2239990234375,
+      "z": 19.014373779296875,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371112"
+    },
+    "thalnos_wp_046": {
+      "map_id": 189,
+      "x": 1801.8017578125,
+      "y": 1344.0,
+      "z": 19.092721939086914,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371117"
+    },
+    "thalnos_wp_047": {
+      "map_id": 189,
+      "x": 1801.051513671875,
+      "y": 1362.5047607421875,
+      "z": 19.08146858215332,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371116"
+    },
+    "thalnos_wp_048": {
+      "map_id": 189,
+      "x": 1801.023681640625,
+      "y": 1363.190185546875,
+      "z": 19.081050872802734,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371115"
+    },
+    "thalnos_wp_049": {
+      "map_id": 189,
+      "x": 1800.9368896484375,
+      "y": 1365.3333740234375,
+      "z": 19.079748153686523,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371127"
+    },
+    "thalnos_wp_050": {
+      "map_id": 189,
+      "x": 1800.218505859375,
+      "y": 1383.05126953125,
+      "z": 19.03413200378418,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371119"
+    },
+    "thalnos_wp_051": {
+      "map_id": 189,
+      "x": 1800.2174072265625,
+      "y": 1383.078857421875,
+      "z": 19.2366886138916,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371120"
+    },
+    "thalnos_wp_052": {
+      "map_id": 189,
+      "x": 1800.2015380859375,
+      "y": 1383.4700927734375,
+      "z": 18.945695877075195,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371118"
+    },
+    "thalnos_wp_053": {
+      "map_id": 189,
+      "x": 1800.072021484375,
+      "y": 1386.6666259765625,
+      "z": 19.21236228942871,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371152"
+    },
+    "thalnos_wp_054": {
+      "map_id": 189,
+      "x": 1799.931884765625,
+      "y": 1390.1204833984375,
+      "z": 21.332921981811523,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371154"
+    },
+    "thalnos_wp_055": {
+      "map_id": 189,
+      "x": 1799.9307861328125,
+      "y": 1390.1495361328125,
+      "z": 21.34976577758789,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371155"
+    },
+    "thalnos_wp_056": {
+      "map_id": 189,
+      "x": 1799.644287109375,
+      "y": 1397.21728515625,
+      "z": 23.745695114135742,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371150"
+    },
+    "thalnos_wp_057": {
+      "map_id": 189,
+      "x": 1799.466552734375,
+      "y": 1401.5999755859375,
+      "z": 23.745695114135742,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371141"
+    },
+    "thalnos_wp_058": {
+      "map_id": 189,
+      "x": 1799.466552734375,
+      "y": 1408.0,
+      "z": 19.21236228942871,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371206"
+    },
+    "thalnos_wp_059": {
+      "map_id": 189,
+      "x": 1799.7332763671875,
+      "y": 1416.0,
+      "z": 14.145698547363281,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371207"
+    },
+    "thalnos_wp_060": {
+      "map_id": 189,
+      "x": 1809.5999755859375,
+      "y": 1419.7332763671875,
+      "z": 8.545700073242188,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371208"
+    },
+    "thalnos_wp_061": {
+      "map_id": 189,
+      "x": 1809.8665771484375,
+      "y": 1429.333251953125,
+      "z": 8.545700073242188,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371210"
+    },
+    "thalnos_wp_062": {
+      "map_id": 189,
+      "x": 1809.333251953125,
+      "y": 1429.86669921875,
+      "z": 8.545700073242188,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371212"
+    },
+    "thalnos_wp_063": {
+      "map_id": 189,
+      "x": 1803.199951171875,
+      "y": 1430.6666259765625,
+      "z": 8.545700073242188,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371211"
+    },
+    "thalnos_wp_064": {
+      "map_id": 189,
+      "x": 1792.0,
+      "y": 1430.6666259765625,
+      "z": 1.3457012176513672,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371037"
+    },
+    "thalnos_wp_065": {
+      "map_id": 189,
+      "x": 1790.39990234375,
+      "y": 1430.6666259765625,
+      "z": 0.2790355682373047,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371041"
+    },
+    "thalnos_wp_066": {
+      "map_id": 189,
+      "x": 1789.333251953125,
+      "y": 1429.333251953125,
+      "z": 0.012369155883789062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371024"
+    },
+    "thalnos_wp_067": {
+      "map_id": 189,
+      "x": 1787.466552734375,
+      "y": 1424.0,
+      "z": 0.2790355682373047,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371030"
+    },
+    "thalnos_wp_068": {
+      "map_id": 189,
+      "x": 1787.466552734375,
+      "y": 1418.933349609375,
+      "z": 0.2790355682373047,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371025"
+    },
+    "thalnos_wp_069": {
+      "map_id": 189,
+      "x": 1792.0,
+      "y": 1418.626708984375,
+      "z": -2.3876309394836426,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371194"
+    },
+    "thalnos_wp_070": {
+      "map_id": 189,
+      "x": 1800.2666015625,
+      "y": 1418.067626953125,
+      "z": -7.987628936767578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371188"
+    },
+    "thalnos_wp_071": {
+      "map_id": 189,
+      "x": 1801.5257568359375,
+      "y": 1417.982421875,
+      "z": -8.520959854125977,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371193"
+    },
+    "thalnos_wp_072": {
+      "map_id": 189,
+      "x": 1811.6307373046875,
+      "y": 1417.299072265625,
+      "z": -9.320961952209473,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 8fcfeabb70aba2b96ccf489408b1cf3252654df3a4580520ae8b08e372773a5c; poly 4503599627371195"
+    }
+  },
+  "required_boss_step_ids": [
+    "vishas",
+    "thalnos"
+  ],
+  "steps": [
+    {
+      "id": "vishas",
+      "label": "Interrogator Vishas",
+      "type": "BOSS",
+      "required": true,
+      "skippable": false,
+      "verified": true,
+      "timeout_ms": 240000,
+      "retries": 2,
+      "pull_distance": 20,
+      "max_pack": 3,
+      "targets": [
+        "vishas"
+      ],
+      "navigation": {
+        "strategy": "corridor",
+        "destination": "vishas_wp_028",
+        "staging": "vishas_wp_028",
+        "arrival_radius": 1.5,
+        "max_z_delta": 1.5,
+        "corridor": {
+          "verified": true,
+          "waypoints": [
+            "vishas_wp_000",
+            "vishas_wp_001",
+            "vishas_wp_002",
+            "vishas_wp_003",
+            "vishas_wp_004",
+            "vishas_wp_005",
+            "vishas_wp_006",
+            "vishas_wp_007",
+            "vishas_wp_008",
+            "vishas_wp_009",
+            "vishas_wp_010",
+            "vishas_wp_011",
+            "vishas_wp_012",
+            "vishas_wp_013",
+            "vishas_wp_014",
+            "vishas_wp_015",
+            "vishas_wp_016",
+            "vishas_wp_017",
+            "vishas_wp_018",
+            "vishas_wp_019",
+            "vishas_wp_020",
+            "vishas_wp_021",
+            "vishas_wp_022",
+            "vishas_wp_023",
+            "vishas_wp_024",
+            "vishas_wp_025",
+            "vishas_wp_026",
+            "vishas_wp_027",
+            "vishas_wp_028"
+          ]
+        }
+      },
+      "completion": {
+        "type": "TARGET_DEAD",
+        "target": "vishas"
+      },
+      "policies": {
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 60000
+        }
+      }
+    },
+    {
+      "id": "thalnos",
+      "label": "Bloodmage Thalnos",
+      "type": "BOSS",
+      "required": true,
+      "skippable": false,
+      "verified": true,
+      "timeout_ms": 240000,
+      "retries": 2,
+      "pull_distance": 20,
+      "max_pack": 3,
+      "targets": [
+        "thalnos"
+      ],
+      "navigation": {
+        "strategy": "corridor",
+        "destination": "thalnos_wp_072",
+        "staging": "thalnos_wp_072",
+        "arrival_radius": 1.5,
+        "max_z_delta": 1.5,
+        "corridor": {
+          "verified": true,
+          "waypoints": [
+            "thalnos_wp_000",
+            "thalnos_wp_001",
+            "thalnos_wp_002",
+            "thalnos_wp_003",
+            "thalnos_wp_004",
+            "thalnos_wp_005",
+            "thalnos_wp_006",
+            "thalnos_wp_007",
+            "thalnos_wp_008",
+            "thalnos_wp_009",
+            "thalnos_wp_010",
+            "thalnos_wp_011",
+            "thalnos_wp_012",
+            "thalnos_wp_013",
+            "thalnos_wp_014",
+            "thalnos_wp_015",
+            "thalnos_wp_016",
+            "thalnos_wp_017",
+            "thalnos_wp_018",
+            "thalnos_wp_019",
+            "thalnos_wp_020",
+            "thalnos_wp_021",
+            "thalnos_wp_022",
+            "thalnos_wp_023",
+            "thalnos_wp_024",
+            "thalnos_wp_025",
+            "thalnos_wp_026",
+            "thalnos_wp_027",
+            "thalnos_wp_028",
+            "thalnos_wp_029",
+            "thalnos_wp_030",
+            "thalnos_wp_031",
+            "thalnos_wp_032",
+            "thalnos_wp_033",
+            "thalnos_wp_034",
+            "thalnos_wp_035",
+            "thalnos_wp_036",
+            "thalnos_wp_037",
+            "thalnos_wp_038",
+            "thalnos_wp_039",
+            "thalnos_wp_040",
+            "thalnos_wp_041",
+            "thalnos_wp_042",
+            "thalnos_wp_043",
+            "thalnos_wp_044",
+            "thalnos_wp_045",
+            "thalnos_wp_046",
+            "thalnos_wp_047",
+            "thalnos_wp_048",
+            "thalnos_wp_049",
+            "thalnos_wp_050",
+            "thalnos_wp_051",
+            "thalnos_wp_052",
+            "thalnos_wp_053",
+            "thalnos_wp_054",
+            "thalnos_wp_055",
+            "thalnos_wp_056",
+            "thalnos_wp_057",
+            "thalnos_wp_058",
+            "thalnos_wp_059",
+            "thalnos_wp_060",
+            "thalnos_wp_061",
+            "thalnos_wp_062",
+            "thalnos_wp_063",
+            "thalnos_wp_064",
+            "thalnos_wp_065",
+            "thalnos_wp_066",
+            "thalnos_wp_067",
+            "thalnos_wp_068",
+            "thalnos_wp_069",
+            "thalnos_wp_070",
+            "thalnos_wp_071",
+            "thalnos_wp_072"
+          ]
+        }
+      },
+      "completion": {
+        "type": "TARGET_DEAD",
+        "target": "thalnos"
+      },
+      "policies": {
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 60000
+        }
+      }
+    }
+  ],
+  "admission_bounds": {
+    "minimum": {
+      "x": 1667.27001953125,
+      "y": 1030.0899658203125,
+      "z": 15.67902946472168,
+      "o": 0
+    },
+    "maximum": {
+      "x": 1707.27001953125,
+      "y": 1070.0899658203125,
+      "z": 21.67902946472168,
+      "o": 0
+    },
+    "verified": true,
+    "evidence": "Audited GY portal45 +verified navmesh entrance; admission tolerance XY20m/Z3m; not navigation geometry"
+  }
+}

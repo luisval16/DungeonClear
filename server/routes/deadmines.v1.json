@@ -1,0 +1,762 @@
+{
+  "enabled": true,
+  "entities": {
+    "captain_greenskin": {
+      "anchor": "captain_greenskin_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 647,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600077
+    },
+    "defias_cannon": {
+      "anchor": "defias_cannon_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 16398,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "gameobject",
+      "search_radius": 8.0,
+      "spawn_low": 3600003
+    },
+    "defias_gunpowder": {
+      "anchor": "defias_gunpowder_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 17155,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "gameobject",
+      "search_radius": 8.0,
+      "spawn_low": 3600008
+    },
+    "edwin_vancleef": {
+      "anchor": "edwin_vancleef_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 639,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600059
+    },
+    "gilnid": {
+      "anchor": "gilnid_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 1763,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600095
+    },
+    "heavy_door_1": {
+      "anchor": "heavy_door_1_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 17153,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "gameobject",
+      "search_radius": 8.0,
+      "spawn_low": 3600006
+    },
+    "heavy_door_2": {
+      "anchor": "heavy_door_2_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 17154,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "gameobject",
+      "search_radius": 8.0,
+      "spawn_low": 3600007
+    },
+    "mr_smite": {
+      "anchor": "mr_smite_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 646,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600076
+    },
+    "rhahkzor": {
+      "anchor": "rhahkzor_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 644,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600074
+    },
+    "sneed": {
+      "anchor": "sneed_anchor",
+      "authoritative_anchor": false,
+      "dynamic_spawn": true,
+      "entry": 643,
+      "evidence": "ScriptDevAI dynamic Sneed; bounded anchor is the audited Shredder spawn, not an invented Sneed spawn",
+      "kind": "creature",
+      "search_radius": 25.0,
+      "spawn_low": 0
+    },
+    "sneed_shredder": {
+      "anchor": "sneed_shredder_anchor",
+      "authoritative_anchor": true,
+      "dynamic_spawn": false,
+      "entry": 642,
+      "evidence": "Existing DungeonClearDeadminesData.h world DB map 36 audit 2026-09-25",
+      "kind": "creature",
+      "search_radius": 6.0,
+      "spawn_low": 3600073
+    }
+  },
+  "id": "deadmines.v1",
+  "label": "Deadmines verified critical path",
+  "map_id": 36,
+  "points": {
+    "captain_greenskin_anchor": {
+      "map_id": 36,
+      "o": 1.2289810180664062,
+      "x": -64.12820434570312,
+      "y": -832.9458618164062,
+      "z": 41.23405075073242
+    },
+    "captain_greenskin_staging": {
+      "map_id": 36,
+      "o": 1.0471980571746826,
+      "x": -54.60341262817383,
+      "y": -823.7650146484375,
+      "z": 42.32525634765625,
+      "floor_verified": true,
+      "evidence": "Offline installed map36 navmesh ground measurement; meshset SHA256 38d4e09ca4c47f1336e5299171f53586220a63ba6674ac27989f561edf2d1316; geometry result SHA256 50d15c03c392ed5ec7232244f5a095817c4dd2c7dc429e477fbc2d7eeaafd756"
+    },
+    "defias_cannon_anchor": {
+      "map_id": 36,
+      "o": -0.8902940154075623,
+      "x": -107.56167602539062,
+      "y": -659.6737060546875,
+      "z": 7.212110996246338
+    },
+    "defias_cannon_staging": {
+      "map_id": 36,
+      "o": -0.7679439783096313,
+      "x": -107.49456024169922,
+      "y": -657.2047119140625,
+      "z": 7.598708629608154
+    },
+    "defias_gunpowder_anchor": {
+      "map_id": 36,
+      "o": -0.7679439783096313,
+      "x": -106.4094009399414,
+      "y": -617.28369140625,
+      "z": 13.849523544311523
+    },
+    "defias_gunpowder_staging": {
+      "map_id": 36,
+      "o": 2.933943033218384,
+      "x": -108.57868957519531,
+      "y": -616.0521240234375,
+      "z": 14.015076637268066
+    },
+    "edwin_vancleef_anchor": {
+      "map_id": 36,
+      "o": 0.0,
+      "x": -87.36903381347656,
+      "y": -819.8951416015625,
+      "z": 39.30044937133789
+    },
+    "edwin_vancleef_staging": {
+      "map_id": 36,
+      "o": 1.2289810180664062,
+      "x": -74.32433319091797,
+      "y": -827.2202758789062,
+      "z": 40.38574981689453
+    },
+    "gilnid_anchor": {
+      "map_id": 36,
+      "o": 2.933943033218384,
+      "x": -177.9685821533203,
+      "y": -576.656982421875,
+      "z": 19.310699462890625
+    },
+    "gilnid_staging": {
+      "map_id": 36,
+      "o": 3.1241230964660645,
+      "x": -191.43560791015625,
+      "y": -577.0514526367188,
+      "z": 20.991928100585938,
+      "floor_verified": true,
+      "evidence": "Offline installed map36 navmesh ground measurement; meshset SHA256 38d4e09ca4c47f1336e5299171f53586220a63ba6674ac27989f561edf2d1316; geometry result SHA256 50d15c03c392ed5ec7232244f5a095817c4dd2c7dc429e477fbc2d7eeaafd756"
+    },
+    "heavy_door_1_anchor": {
+      "map_id": 36,
+      "o": -0.017451999709010124,
+      "x": -262.71368408203125,
+      "y": -482.36102294921875,
+      "z": 49.43531036376953
+    },
+    "heavy_door_1_staging": {
+      "map_id": 36,
+      "o": 1.6580630540847778,
+      "x": -260.4062805175781,
+      "y": -481.4131164550781,
+      "z": 49.600494384765625
+    },
+    "heavy_door_2_anchor": {
+      "map_id": 36,
+      "o": 3.1241230964660645,
+      "x": -242.9651641845703,
+      "y": -578.5609741210938,
+      "z": 51.13660430908203
+    },
+    "heavy_door_2_staging": {
+      "map_id": 36,
+      "o": 1.313006043434143,
+      "x": -244.68519592285156,
+      "y": -576.7537841796875,
+      "z": 51.2963981628418
+    },
+    "mr_smite_anchor": {
+      "map_id": 36,
+      "o": 1.0471980571746826,
+      "x": -22.84705924987793,
+      "y": -797.2828369140625,
+      "z": 20.374483108520508
+    },
+    "mr_smite_staging": {
+      "map_id": 36,
+      "o": 1.0471980571746826,
+      "x": -22.84705924987793,
+      "y": -797.2828369140625,
+      "z": 20.374483108520508
+    },
+    "rhahkzor_anchor": {
+      "map_id": 36,
+      "o": 1.6580630540847778,
+      "x": -191.67080688476562,
+      "y": -453.175537109375,
+      "z": 54.5211067199707
+    },
+    "rhahkzor_staging": {
+      "map_id": 36,
+      "o": 1.6580630540847778,
+      "x": -192.7166748046875,
+      "y": -441.22119140625,
+      "z": 54.5211067199707
+    },
+    "sneed_anchor": {
+      "map_id": 36,
+      "o": 1.313006043434143,
+      "x": -309.30902099609375,
+      "y": -508.8550109863281,
+      "z": 57.30009460449219
+    },
+    "sneed_shredder_anchor": {
+      "map_id": 36,
+      "o": 1.313006043434143,
+      "x": -309.30902099609375,
+      "y": -508.8550109863281,
+      "z": 57.30009460449219
+    },
+    "sneed_shredder_staging": {
+      "map_id": 36,
+      "o": 4.820427894592285,
+      "x": -289.86810302734375,
+      "y": -510.0742492675781,
+      "z": 49.82113265991211
+    },
+    "sneed_staging": {
+      "map_id": 36,
+      "o": 4.820427894592285,
+      "x": -289.86810302734375,
+      "y": -510.0742492675781,
+      "z": 49.82113265991211
+    }
+  },
+  "required_boss_step_ids": [
+    "rhahkzor",
+    "sneed_shredder",
+    "sneed",
+    "gilnid",
+    "mr_smite",
+    "captain_greenskin",
+    "edwin_vancleef"
+  ],
+  "revision": "p036-r6-json-pull-r1",
+  "schema_version": 1,
+  "steps": [
+    {
+      "completion": {
+        "all": [
+          {
+            "key": 0,
+            "type": "INSTANCE_DATA_EQUALS",
+            "value": 3
+          }
+        ]
+      },
+      "id": "rhahkzor",
+      "label": "Rhahk'Zor",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "rhahkzor_staging",
+        "max_z_delta": 2.0,
+        "staging": "rhahkzor_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "rhahkzor"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "id": "heavy_door_1",
+      "interaction": {
+        "kind": "USE_GO",
+        "postconditions": {
+          "all": [
+            {
+              "target": "heavy_door_1",
+              "type": "GO_STATE_EQUALS",
+              "value": 0
+            },
+            {
+              "key": 0,
+              "type": "INSTANCE_DATA_EQUALS",
+              "value": 3
+            }
+          ]
+        },
+        "target": "heavy_door_1"
+      },
+      "label": "Open Heavy Door to Sneed",
+      "max_pack": 1,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "heavy_door_1_staging",
+        "max_z_delta": 2.0,
+        "staging": "heavy_door_1_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body"
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 1,
+      "skippable": false,
+      "timeout_ms": 30000,
+      "type": "INTERACT",
+      "verified": true
+    },
+    {
+      "completion": {
+        "all": [
+          {
+            "negate": true,
+            "target": "sneed",
+            "type": "TARGET_DEAD"
+          }
+        ]
+      },
+      "id": "sneed_shredder",
+      "label": "Sneed's Shredder",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "sneed_shredder_staging",
+        "max_z_delta": 2.0,
+        "staging": "sneed_shredder_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "observable_successor",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "body",
+        "target_wait": {
+          "policy": "patrol_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 25.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "sneed_shredder"
+      ],
+      "terminal_completion_any": [
+        {
+          "target": "sneed",
+          "type": "TARGET_DEAD"
+        },
+        {
+          "key": 1,
+          "type": "INSTANCE_DATA_EQUALS",
+          "value": 3
+        }
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "completion": {
+        "all": [
+          {
+            "key": 1,
+            "type": "INSTANCE_DATA_EQUALS",
+            "value": 3
+          }
+        ]
+      },
+      "id": "sneed",
+      "label": "Sneed",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "sneed_staging",
+        "max_z_delta": 2.0,
+        "staging": "sneed_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "patrol_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 25.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "sneed"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "id": "heavy_door_2",
+      "interaction": {
+        "kind": "USE_GO",
+        "postconditions": {
+          "all": [
+            {
+              "target": "heavy_door_2",
+              "type": "GO_STATE_EQUALS",
+              "value": 0
+            },
+            {
+              "key": 1,
+              "type": "INSTANCE_DATA_EQUALS",
+              "value": 3
+            }
+          ]
+        },
+        "target": "heavy_door_2"
+      },
+      "label": "Open Heavy Door to Gilnid",
+      "max_pack": 1,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "heavy_door_2_staging",
+        "max_z_delta": 2.0,
+        "staging": "heavy_door_2_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body"
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 1,
+      "skippable": false,
+      "timeout_ms": 30000,
+      "type": "INTERACT",
+      "verified": true
+    },
+    {
+      "completion": {
+        "all": [
+          {
+            "key": 2,
+            "type": "INSTANCE_DATA_EQUALS",
+            "value": 3
+          }
+        ]
+      },
+      "id": "gilnid",
+      "label": "Gilnid",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "gilnid_staging",
+        "max_z_delta": 2.0,
+        "staging": "gilnid_staging",
+        "strategy": "floor_safe"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "gilnid"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "id": "defias_gunpowder",
+      "interaction": {
+        "kind": "LOOT_GO",
+        "postconditions": {
+          "all": [
+            {
+              "count": 1,
+              "item_id": 5397,
+              "type": "HAS_ITEM"
+            }
+          ]
+        },
+        "target": "defias_gunpowder"
+      },
+      "label": "Loot Defias Gunpowder",
+      "max_pack": 1,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "defias_gunpowder_staging",
+        "max_z_delta": 2.0,
+        "staging": "defias_gunpowder_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body"
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 1,
+      "skippable": false,
+      "timeout_ms": 45000,
+      "type": "INTERACT",
+      "verified": true
+    },
+    {
+      "id": "defias_cannon",
+      "interaction": {
+        "kind": "USE_ITEM_ON_GO",
+        "postconditions": {
+          "all": [
+            {
+              "key": 3,
+              "type": "INSTANCE_DATA_EQUALS",
+              "value": 3
+            }
+          ]
+        },
+        "required_count": 1,
+        "required_item": 5397,
+        "target": "defias_cannon"
+      },
+      "label": "Fire Defias Cannon",
+      "max_pack": 1,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "defias_cannon_staging",
+        "max_z_delta": 2.0,
+        "staging": "defias_cannon_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body"
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 1,
+      "skippable": false,
+      "timeout_ms": 30000,
+      "type": "INTERACT",
+      "verified": true
+    },
+    {
+      "id": "iron_clad_settle",
+      "label": "Wait for Iron Clad Door",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 3.0,
+        "max_z_delta": 2.0,
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body"
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 0,
+      "skippable": false,
+      "timeout_ms": 10000,
+      "type": "WAIT",
+      "verified": true
+    },
+    {
+      "id": "mr_smite",
+      "label": "Mr. Smite",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "mr_smite_staging",
+        "max_z_delta": 2.0,
+        "staging": "mr_smite_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "mr_smite"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "id": "captain_greenskin",
+      "label": "Captain Greenskin",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "captain_greenskin_staging",
+        "max_z_delta": 2.0,
+        "staging": "captain_greenskin_staging",
+        "strategy": "floor_safe"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "captain_greenskin"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    },
+    {
+      "id": "edwin_vancleef",
+      "label": "Edwin VanCleef",
+      "max_pack": 3,
+      "navigation": {
+        "arrival_radius": 1.5,
+        "destination": "edwin_vancleef_staging",
+        "max_z_delta": 2.0,
+        "staging": "edwin_vancleef_staging",
+        "strategy": "explicit"
+      },
+      "policies": {
+        "completion_policy": "legacy",
+        "handoff": "none",
+        "interaction_policy": "legacy",
+        "post_combat_resume": "legacy",
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        }
+      },
+      "pull_distance": 20.0,
+      "required": true,
+      "retries": 2,
+      "skippable": false,
+      "targets": [
+        "edwin_vancleef"
+      ],
+      "timeout_ms": 90000,
+      "type": "BOSS",
+      "verified": true
+    }
+  ],
+  "validated": true
+}

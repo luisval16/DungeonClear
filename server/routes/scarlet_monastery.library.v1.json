@@ -1,0 +1,1517 @@
+{
+  "schema_version": 1,
+  "id": "scarlet_monastery.library.v1",
+  "revision": "library-doan-safety-r2",
+  "label": "Scarlet Monastery Library",
+  "map_id": 189,
+  "enabled": true,
+  "validated": true,
+  "entities": {
+    "doan": {
+      "kind": "creature",
+      "entry": 6487,
+      "spawn_low": 1890335,
+      "dynamic_spawn": false,
+      "anchor": "doan_anchor",
+      "search_radius": 23,
+      "authoritative_anchor": true,
+      "evidence": "Fresh installed DB Library audit; exact static GUID/map binding, no entry-only target fallback. Four audited patrol vertices; search radius covers full patrol plus 6m margin; bounded wait90s."
+    },
+    "loksey": {
+      "kind": "creature",
+      "entry": 3974,
+      "spawn_low": 1890005,
+      "dynamic_spawn": false,
+      "anchor": "loksey_anchor",
+      "search_radius": 6,
+      "authoritative_anchor": true,
+      "evidence": "Fresh installed DB Library audit; exact static GUID/map binding, no entry-only target fallback."
+    },
+    "doan_strongbox": {
+      "kind": "gameobject",
+      "entry": 103821,
+      "spawn_low": 1890042,
+      "dynamic_spawn": false,
+      "anchor": "doan_strongbox_anchor",
+      "search_radius": 6,
+      "authoritative_anchor": true,
+      "evidence": "Fresh installed DB Library audit; exact static GUID/map binding, no entry-only target fallback."
+    }
+  },
+  "points": {
+    "entrance": {
+      "map_id": 189,
+      "x": 253.6719970703125,
+      "y": -206.62399291992188,
+      "z": 18.699901580810547,
+      "o": 4.71239,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271"
+    },
+    "doan_anchor": {
+      "map_id": 189,
+      "x": 148.32,
+      "y": -428.692,
+      "z": 18.4864,
+      "o": 6.24828,
+      "floor_verified": false,
+      "evidence": "Installed creature DB GUID 1890335; spawn anchor only, staging/path unverified."
+    },
+    "loksey_anchor": {
+      "map_id": 189,
+      "x": 119.938,
+      "y": -260.869,
+      "z": 18.6299,
+      "o": 0.10472,
+      "floor_verified": false,
+      "evidence": "Installed creature DB GUID 1890005; spawn anchor only, staging/path unverified."
+    },
+    "doan_strongbox_anchor": {
+      "map_id": 189,
+      "x": 131.826,
+      "y": -432.618,
+      "z": 18.5158,
+      "o": 0.017453,
+      "floor_verified": false,
+      "evidence": "Installed gameobject DB GUID 1890042; spawn anchor only, staging/path unverified."
+    },
+    "loksey_wp_000": {
+      "map_id": 189,
+      "x": 253.6719970703125,
+      "y": -206.62399291992188,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272955"
+    },
+    "loksey_wp_001": {
+      "map_id": 189,
+      "x": 255.79446411132812,
+      "y": -207.40553283691406,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272952"
+    },
+    "loksey_wp_002": {
+      "map_id": 189,
+      "x": 255.9999237060547,
+      "y": -207.48118591308594,
+      "z": 18.737382888793945,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273155"
+    },
+    "loksey_wp_003": {
+      "map_id": 189,
+      "x": 258.1332702636719,
+      "y": -208.2667236328125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273156"
+    },
+    "loksey_wp_004": {
+      "map_id": 189,
+      "x": 261.333251953125,
+      "y": -209.33338928222656,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273158"
+    },
+    "loksey_wp_005": {
+      "map_id": 189,
+      "x": 266.9332580566406,
+      "y": -211.2000732421875,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273157"
+    },
+    "loksey_wp_006": {
+      "map_id": 189,
+      "x": 267.1999206542969,
+      "y": -213.33340454101562,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273143"
+    },
+    "loksey_wp_007": {
+      "map_id": 189,
+      "x": 266.9332580566406,
+      "y": -221.86672973632812,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273147"
+    },
+    "loksey_wp_008": {
+      "map_id": 189,
+      "x": 264.2666015625,
+      "y": -223.46673583984375,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273154"
+    },
+    "loksey_wp_009": {
+      "map_id": 189,
+      "x": 262.14337158203125,
+      "y": -223.8408203125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273152"
+    },
+    "loksey_wp_010": {
+      "map_id": 189,
+      "x": 255.9999237060547,
+      "y": -224.92324829101562,
+      "z": 19.140239715576172,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272940"
+    },
+    "loksey_wp_011": {
+      "map_id": 189,
+      "x": 252.3614044189453,
+      "y": -225.56431579589844,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272943"
+    },
+    "loksey_wp_012": {
+      "map_id": 189,
+      "x": 251.19993591308594,
+      "y": -225.76895141601562,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272946"
+    },
+    "loksey_wp_013": {
+      "map_id": 189,
+      "x": 239.2032012939453,
+      "y": -227.88267517089844,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272942"
+    },
+    "loksey_wp_014": {
+      "map_id": 189,
+      "x": 238.13327026367188,
+      "y": -228.07118225097656,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272941"
+    },
+    "loksey_wp_015": {
+      "map_id": 189,
+      "x": 234.66661071777344,
+      "y": -228.68197631835938,
+      "z": 19.05152130126953,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272804"
+    },
+    "loksey_wp_016": {
+      "map_id": 189,
+      "x": 224.74072265625,
+      "y": -230.43081665039062,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272806"
+    },
+    "loksey_wp_017": {
+      "map_id": 189,
+      "x": 223.4665985107422,
+      "y": -230.65530395507812,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272807"
+    },
+    "loksey_wp_018": {
+      "map_id": 189,
+      "x": 213.33326721191406,
+      "y": -232.44070434570312,
+      "z": 19.17681121826172,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272683"
+    },
+    "loksey_wp_019": {
+      "map_id": 189,
+      "x": 208.2666015625,
+      "y": -233.33340454101562,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272688"
+    },
+    "loksey_wp_020": {
+      "map_id": 189,
+      "x": 203.99993896484375,
+      "y": -234.66671752929688,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272677"
+    },
+    "loksey_wp_021": {
+      "map_id": 189,
+      "x": 197.86660766601562,
+      "y": -238.13339233398438,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272680"
+    },
+    "loksey_wp_022": {
+      "map_id": 189,
+      "x": 191.99993896484375,
+      "y": -241.36605834960938,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272607"
+    },
+    "loksey_wp_023": {
+      "map_id": 189,
+      "x": 184.79994201660156,
+      "y": -245.33340454101562,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272609"
+    },
+    "loksey_wp_024": {
+      "map_id": 189,
+      "x": 180.79994201660156,
+      "y": -249.06674194335938,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272604"
+    },
+    "loksey_wp_025": {
+      "map_id": 189,
+      "x": 170.6666259765625,
+      "y": -254.81398010253906,
+      "z": 19.01401138305664,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272538"
+    },
+    "loksey_wp_026": {
+      "map_id": 189,
+      "x": 169.29885864257812,
+      "y": -255.58973693847656,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272537"
+    },
+    "loksey_wp_027": {
+      "map_id": 189,
+      "x": 168.57537841796875,
+      "y": -256.00006103515625,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272521"
+    },
+    "loksey_wp_028": {
+      "map_id": 189,
+      "x": 167.51792907714844,
+      "y": -256.59979248046875,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272528"
+    },
+    "loksey_wp_029": {
+      "map_id": 189,
+      "x": 162.93328857421875,
+      "y": -259.2000427246094,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272523"
+    },
+    "loksey_wp_030": {
+      "map_id": 189,
+      "x": 159.4666290283203,
+      "y": -259.2000427246094,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272525"
+    },
+    "loksey_wp_031": {
+      "map_id": 189,
+      "x": 152.26661682128906,
+      "y": -259.2000427246094,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272517"
+    },
+    "loksey_wp_032": {
+      "map_id": 189,
+      "x": 149.3332977294922,
+      "y": -259.2000427246094,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272445"
+    },
+    "loksey_wp_033": {
+      "map_id": 189,
+      "x": 145.8666229248047,
+      "y": -259.2000427246094,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272446"
+    },
+    "loksey_wp_034": {
+      "map_id": 189,
+      "x": 140.06666564941406,
+      "y": -256.00006103515625,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272452"
+    },
+    "loksey_wp_035": {
+      "map_id": 189,
+      "x": 138.13330078125,
+      "y": -254.93338012695312,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272450"
+    },
+    "loksey_wp_036": {
+      "map_id": 189,
+      "x": 134.6666259765625,
+      "y": -254.93338012695312,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272451"
+    },
+    "doan_wp_000": {
+      "map_id": 189,
+      "x": 119.93800354003906,
+      "y": -260.8689880371094,
+      "z": 18.798952102661133,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272390"
+    },
+    "doan_wp_001": {
+      "map_id": 189,
+      "x": 127.99996185302734,
+      "y": -257.6200256347656,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272444"
+    },
+    "doan_wp_002": {
+      "map_id": 189,
+      "x": 128.24530029296875,
+      "y": -257.5211486816406,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272443"
+    },
+    "doan_wp_003": {
+      "map_id": 189,
+      "x": 132.01976013183594,
+      "y": -256.00006103515625,
+      "z": 19.034883499145508,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272451"
+    },
+    "doan_wp_004": {
+      "map_id": 189,
+      "x": 134.6666259765625,
+      "y": -254.93338012695312,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272450"
+    },
+    "doan_wp_005": {
+      "map_id": 189,
+      "x": 138.13330078125,
+      "y": -254.93338012695312,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272452"
+    },
+    "doan_wp_006": {
+      "map_id": 189,
+      "x": 140.01776123046875,
+      "y": -256.00006103515625,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272446"
+    },
+    "doan_wp_007": {
+      "map_id": 189,
+      "x": 145.8666229248047,
+      "y": -259.31072998046875,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272445"
+    },
+    "doan_wp_008": {
+      "map_id": 189,
+      "x": 149.3332977294922,
+      "y": -261.27301025390625,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272517"
+    },
+    "doan_wp_009": {
+      "map_id": 189,
+      "x": 152.26661682128906,
+      "y": -262.9333801269531,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272525"
+    },
+    "doan_wp_010": {
+      "map_id": 189,
+      "x": 153.8938751220703,
+      "y": -267.7548828125,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272518"
+    },
+    "doan_wp_011": {
+      "map_id": 189,
+      "x": 154.1331787109375,
+      "y": -268.46392822265625,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272515"
+    },
+    "doan_wp_012": {
+      "map_id": 189,
+      "x": 157.12661743164062,
+      "y": -277.3333740234375,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272507"
+    },
+    "doan_wp_013": {
+      "map_id": 189,
+      "x": 159.4666290283203,
+      "y": -284.2667236328125,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272508"
+    },
+    "doan_wp_014": {
+      "map_id": 189,
+      "x": 170.6666259765625,
+      "y": -290.9390869140625,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272586"
+    },
+    "doan_wp_015": {
+      "map_id": 189,
+      "x": 171.9999542236328,
+      "y": -291.7333984375,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272589"
+    },
+    "doan_wp_016": {
+      "map_id": 189,
+      "x": 176.2823028564453,
+      "y": -298.6667175292969,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272578"
+    },
+    "doan_wp_017": {
+      "map_id": 189,
+      "x": 177.59994506835938,
+      "y": -300.800048828125,
+      "z": 18.966567993164062,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272579"
+    },
+    "doan_wp_018": {
+      "map_id": 189,
+      "x": 181.59994506835938,
+      "y": -302.13336181640625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272573"
+    },
+    "doan_wp_019": {
+      "map_id": 189,
+      "x": 183.74761962890625,
+      "y": -302.67828369140625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272571"
+    },
+    "doan_wp_020": {
+      "map_id": 189,
+      "x": 191.99993896484375,
+      "y": -304.77215576171875,
+      "z": 18.968427658081055,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272651"
+    },
+    "doan_wp_021": {
+      "map_id": 189,
+      "x": 197.2226104736328,
+      "y": -306.0973205566406,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272648"
+    },
+    "doan_wp_022": {
+      "map_id": 189,
+      "x": 198.54061889648438,
+      "y": -306.4317626953125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272652"
+    },
+    "doan_wp_023": {
+      "map_id": 189,
+      "x": 212.2401580810547,
+      "y": -309.9077453613281,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272656"
+    },
+    "doan_wp_024": {
+      "map_id": 189,
+      "x": 213.33326721191406,
+      "y": -310.18511962890625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272785"
+    },
+    "doan_wp_025": {
+      "map_id": 189,
+      "x": 217.33326721191406,
+      "y": -311.2000427246094,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272789"
+    },
+    "doan_wp_026": {
+      "map_id": 189,
+      "x": 218.9332733154297,
+      "y": -311.7333984375,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272778"
+    },
+    "doan_wp_027": {
+      "map_id": 189,
+      "x": 222.9332733154297,
+      "y": -318.9333801269531,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272788"
+    },
+    "doan_wp_028": {
+      "map_id": 189,
+      "x": 223.19479370117188,
+      "y": -319.2410583496094,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272784"
+    },
+    "doan_wp_029": {
+      "map_id": 189,
+      "x": 223.83995056152344,
+      "y": -320.00006103515625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272767"
+    },
+    "doan_wp_030": {
+      "map_id": 189,
+      "x": 224.9732666015625,
+      "y": -321.3333740234375,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272773"
+    },
+    "doan_wp_031": {
+      "map_id": 189,
+      "x": 227.4665985107422,
+      "y": -324.2667236328125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272771"
+    },
+    "doan_wp_032": {
+      "map_id": 189,
+      "x": 230.9332733154297,
+      "y": -325.86669921875,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272772"
+    },
+    "doan_wp_033": {
+      "map_id": 189,
+      "x": 233.0666046142578,
+      "y": -326.4830017089844,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272770"
+    },
+    "doan_wp_034": {
+      "map_id": 189,
+      "x": 234.66659545898438,
+      "y": -326.9452209472656,
+      "z": 18.97715950012207,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272922"
+    },
+    "doan_wp_035": {
+      "map_id": 189,
+      "x": 250.27252197265625,
+      "y": -331.45361328125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272915"
+    },
+    "doan_wp_036": {
+      "map_id": 189,
+      "x": 252.7999267578125,
+      "y": -332.1837463378906,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272916"
+    },
+    "doan_wp_037": {
+      "map_id": 189,
+      "x": 254.93325805664062,
+      "y": -332.800048828125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272912"
+    },
+    "doan_wp_038": {
+      "map_id": 189,
+      "x": 255.9999237060547,
+      "y": -333.60003662109375,
+      "z": 19.186723709106445,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273116"
+    },
+    "doan_wp_039": {
+      "map_id": 189,
+      "x": 256.0968933105469,
+      "y": -333.6727600097656,
+      "z": 19.168588638305664,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273107"
+    },
+    "doan_wp_040": {
+      "map_id": 189,
+      "x": 258.1332702636719,
+      "y": -335.2000427246094,
+      "z": 18.960063934326172,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273120"
+    },
+    "doan_wp_041": {
+      "map_id": 189,
+      "x": 258.5700988769531,
+      "y": -335.52764892578125,
+      "z": 18.956409454345703,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273112"
+    },
+    "doan_wp_042": {
+      "map_id": 189,
+      "x": 260.2666320800781,
+      "y": -336.800048828125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273110"
+    },
+    "doan_wp_043": {
+      "map_id": 189,
+      "x": 263.4665832519531,
+      "y": -339.20001220703125,
+      "z": 19.233234405517578,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273119"
+    },
+    "doan_wp_044": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -341.3333740234375,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273094"
+    },
+    "doan_wp_045": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -345.86669921875,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273085"
+    },
+    "doan_wp_046": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -348.0000305175781,
+      "z": 20.89597511291504,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273101"
+    },
+    "doan_wp_047": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -348.87274169921875,
+      "z": 20.542325973510742,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273096"
+    },
+    "doan_wp_048": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -357.86669921875,
+      "z": 20.528474807739258,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273084"
+    },
+    "doan_wp_049": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -358.933349609375,
+      "z": 20.966562271118164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273098"
+    },
+    "doan_wp_050": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -362.66668701171875,
+      "z": 20.966562271118164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273078"
+    },
+    "doan_wp_051": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -363.0000305175781,
+      "z": 20.96656036376953,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273079"
+    },
+    "doan_wp_052": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -365.2160339355469,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273077"
+    },
+    "doan_wp_053": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -373.4507141113281,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273074"
+    },
+    "doan_wp_054": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -376.8000183105469,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273080"
+    },
+    "doan_wp_055": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -381.60003662109375,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273071"
+    },
+    "doan_wp_056": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -384.0,
+      "z": 20.86130142211914,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273044"
+    },
+    "doan_wp_057": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -384.2909240722656,
+      "z": 20.930204391479492,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273046"
+    },
+    "doan_wp_058": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -384.32000732421875,
+      "z": 20.982568740844727,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273047"
+    },
+    "doan_wp_059": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -393.64849853515625,
+      "z": 20.542325973510742,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273043"
+    },
+    "doan_wp_060": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -394.66668701171875,
+      "z": 20.966562271118164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273042"
+    },
+    "doan_wp_061": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -399.73333740234375,
+      "z": 20.966562271118164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273037"
+    },
+    "doan_wp_062": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -400.5754699707031,
+      "z": 20.496395111083984,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273058"
+    },
+    "doan_wp_063": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -401.14447021484375,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273059"
+    },
+    "doan_wp_064": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -405.3333740234375,
+      "z": 20.56656837463379,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273026"
+    },
+    "doan_wp_065": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -409.5030517578125,
+      "z": 20.518083572387695,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273018"
+    },
+    "doan_wp_066": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -411.2205505371094,
+      "z": 20.956308364868164,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273017"
+    },
+    "doan_wp_067": {
+      "map_id": 189,
+      "x": 263.99993896484375,
+      "y": -412.5333557128906,
+      "z": 20.299901962280273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273022"
+    },
+    "doan_wp_068": {
+      "map_id": 189,
+      "x": 263.7332458496094,
+      "y": -418.66668701171875,
+      "z": 19.499902725219727,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273023"
+    },
+    "doan_wp_069": {
+      "map_id": 189,
+      "x": 257.333251953125,
+      "y": -424.26666259765625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512273020"
+    },
+    "doan_wp_070": {
+      "map_id": 189,
+      "x": 255.9999237060547,
+      "y": -424.87274169921875,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272869"
+    },
+    "doan_wp_071": {
+      "map_id": 189,
+      "x": 254.39993286132812,
+      "y": -425.6000061035156,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272876"
+    },
+    "doan_wp_072": {
+      "map_id": 189,
+      "x": 245.5999298095703,
+      "y": -426.13336181640625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272874"
+    },
+    "doan_wp_073": {
+      "map_id": 189,
+      "x": 234.66659545898438,
+      "y": -426.66668701171875,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272740"
+    },
+    "doan_wp_074": {
+      "map_id": 189,
+      "x": 213.33326721191406,
+      "y": -428.0732727050781,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272622"
+    },
+    "doan_wp_075": {
+      "map_id": 189,
+      "x": 210.39993286132812,
+      "y": -428.26666259765625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272627"
+    },
+    "doan_wp_076": {
+      "map_id": 189,
+      "x": 205.06137084960938,
+      "y": -428.3032531738281,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272616"
+    },
+    "doan_wp_077": {
+      "map_id": 189,
+      "x": 202.49183654785156,
+      "y": -428.3208312988281,
+      "z": 19.215185165405273,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272620"
+    },
+    "doan_wp_078": {
+      "map_id": 189,
+      "x": 191.9999542236328,
+      "y": -428.3927307128906,
+      "z": 19.191219329833984,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272548"
+    },
+    "doan_wp_079": {
+      "map_id": 189,
+      "x": 186.50369262695312,
+      "y": -428.4303894042969,
+      "z": 19.144092559814453,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272546"
+    },
+    "doan_wp_080": {
+      "map_id": 189,
+      "x": 176.16470336914062,
+      "y": -428.501220703125,
+      "z": 19.15505599975586,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272543"
+    },
+    "doan_wp_081": {
+      "map_id": 189,
+      "x": 173.63592529296875,
+      "y": -428.5185546875,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272547"
+    },
+    "doan_wp_082": {
+      "map_id": 189,
+      "x": 170.6666259765625,
+      "y": -428.53887939453125,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272475"
+    },
+    "doan_wp_083": {
+      "map_id": 189,
+      "x": 168.21104431152344,
+      "y": -428.5556945800781,
+      "z": 18.699905395507812,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272478"
+    },
+    "doan_wp_084": {
+      "map_id": 189,
+      "x": 167.9999542236328,
+      "y": -428.5571594238281,
+      "z": 18.84053611755371,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272470"
+    },
+    "doan_wp_085": {
+      "map_id": 189,
+      "x": 159.199951171875,
+      "y": -428.617431640625,
+      "z": 18.699901580810547,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272476"
+    },
+    "doan_patrol_1": {
+      "map_id": 189,
+      "x": 148.32000732421875,
+      "y": -428.6919860839844,
+      "z": 18.71267318725586,
+      "o": 0.0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; audited creature_movement vertex, diagnostic only"
+    },
+    "doan_patrol_2": {
+      "map_id": 189,
+      "x": 142.1060028076172,
+      "y": -413.4859924316406,
+      "z": 18.797119140625,
+      "o": 0.0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; audited creature_movement vertex, diagnostic only"
+    },
+    "doan_patrol_3": {
+      "map_id": 189,
+      "x": 148.32000732421875,
+      "y": -428.6919860839844,
+      "z": 18.71267318725586,
+      "o": 0.0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; audited creature_movement vertex, diagnostic only"
+    },
+    "doan_patrol_4": {
+      "map_id": 189,
+      "x": 147.16700744628906,
+      "y": -442.78399658203125,
+      "z": 18.701923370361328,
+      "o": 0.0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; audited creature_movement vertex, diagnostic only"
+    },
+    "doan_strongbox_wp_000": {
+      "map_id": 189,
+      "x": 148.32000732421875,
+      "y": -428.6919860839844,
+      "z": 18.71267318725586,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272421"
+    },
+    "doan_strongbox_wp_001": {
+      "map_id": 189,
+      "x": 131.8260040283203,
+      "y": -432.6180114746094,
+      "z": 18.704729080200195,
+      "o": 0,
+      "floor_verified": true,
+      "evidence": "Installed map189 Detour ground surface; evidence SHA256 6ee5bcf049e1a076ffdce68f8eb9f1fa2350fb16cd4eac443b88c614b4543271; poly 4503612512272421"
+    }
+  },
+  "required_boss_step_ids": [
+    "loksey",
+    "doan"
+  ],
+  "steps": [
+    {
+      "id": "loksey",
+      "label": "Houndmaster Loksey",
+      "type": "BOSS",
+      "required": true,
+      "skippable": false,
+      "verified": true,
+      "timeout_ms": 240000,
+      "retries": 2,
+      "pull_distance": 20,
+      "max_pack": 3,
+      "targets": [
+        "loksey"
+      ],
+      "navigation": {
+        "strategy": "corridor",
+        "destination": "loksey_wp_036",
+        "staging": "loksey_wp_036",
+        "arrival_radius": 1.5,
+        "max_z_delta": 1.5,
+        "corridor": {
+          "verified": true,
+          "waypoints": [
+            "loksey_wp_000",
+            "loksey_wp_001",
+            "loksey_wp_002",
+            "loksey_wp_003",
+            "loksey_wp_004",
+            "loksey_wp_005",
+            "loksey_wp_006",
+            "loksey_wp_007",
+            "loksey_wp_008",
+            "loksey_wp_009",
+            "loksey_wp_010",
+            "loksey_wp_011",
+            "loksey_wp_012",
+            "loksey_wp_013",
+            "loksey_wp_014",
+            "loksey_wp_015",
+            "loksey_wp_016",
+            "loksey_wp_017",
+            "loksey_wp_018",
+            "loksey_wp_019",
+            "loksey_wp_020",
+            "loksey_wp_021",
+            "loksey_wp_022",
+            "loksey_wp_023",
+            "loksey_wp_024",
+            "loksey_wp_025",
+            "loksey_wp_026",
+            "loksey_wp_027",
+            "loksey_wp_028",
+            "loksey_wp_029",
+            "loksey_wp_030",
+            "loksey_wp_031",
+            "loksey_wp_032",
+            "loksey_wp_033",
+            "loksey_wp_034",
+            "loksey_wp_035",
+            "loksey_wp_036"
+          ]
+        }
+      },
+      "completion": {
+        "type": "TARGET_DEAD",
+        "target": "loksey"
+      },
+      "policies": {
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 60000
+        }
+      }
+    },
+    {
+      "id": "doan",
+      "label": "Arcanist Doan",
+      "type": "BOSS",
+      "required": true,
+      "skippable": false,
+      "verified": true,
+      "timeout_ms": 240000,
+      "retries": 2,
+      "pull_distance": 20,
+      "max_pack": 3,
+      "targets": [
+        "doan"
+      ],
+      "navigation": {
+        "strategy": "corridor",
+        "destination": "doan_wp_085",
+        "staging": "doan_wp_085",
+        "arrival_radius": 1.5,
+        "max_z_delta": 1.5,
+        "corridor": {
+          "verified": true,
+          "waypoints": [
+            "doan_wp_000",
+            "doan_wp_001",
+            "doan_wp_002",
+            "doan_wp_003",
+            "doan_wp_004",
+            "doan_wp_005",
+            "doan_wp_006",
+            "doan_wp_007",
+            "doan_wp_008",
+            "doan_wp_009",
+            "doan_wp_010",
+            "doan_wp_011",
+            "doan_wp_012",
+            "doan_wp_013",
+            "doan_wp_014",
+            "doan_wp_015",
+            "doan_wp_016",
+            "doan_wp_017",
+            "doan_wp_018",
+            "doan_wp_019",
+            "doan_wp_020",
+            "doan_wp_021",
+            "doan_wp_022",
+            "doan_wp_023",
+            "doan_wp_024",
+            "doan_wp_025",
+            "doan_wp_026",
+            "doan_wp_027",
+            "doan_wp_028",
+            "doan_wp_029",
+            "doan_wp_030",
+            "doan_wp_031",
+            "doan_wp_032",
+            "doan_wp_033",
+            "doan_wp_034",
+            "doan_wp_035",
+            "doan_wp_036",
+            "doan_wp_037",
+            "doan_wp_038",
+            "doan_wp_039",
+            "doan_wp_040",
+            "doan_wp_041",
+            "doan_wp_042",
+            "doan_wp_043",
+            "doan_wp_044",
+            "doan_wp_045",
+            "doan_wp_046",
+            "doan_wp_047",
+            "doan_wp_048",
+            "doan_wp_049",
+            "doan_wp_050",
+            "doan_wp_051",
+            "doan_wp_052",
+            "doan_wp_053",
+            "doan_wp_054",
+            "doan_wp_055",
+            "doan_wp_056",
+            "doan_wp_057",
+            "doan_wp_058",
+            "doan_wp_059",
+            "doan_wp_060",
+            "doan_wp_061",
+            "doan_wp_062",
+            "doan_wp_063",
+            "doan_wp_064",
+            "doan_wp_065",
+            "doan_wp_066",
+            "doan_wp_067",
+            "doan_wp_068",
+            "doan_wp_069",
+            "doan_wp_070",
+            "doan_wp_071",
+            "doan_wp_072",
+            "doan_wp_073",
+            "doan_wp_074",
+            "doan_wp_075",
+            "doan_wp_076",
+            "doan_wp_077",
+            "doan_wp_078",
+            "doan_wp_079",
+            "doan_wp_080",
+            "doan_wp_081",
+            "doan_wp_082",
+            "doan_wp_083",
+            "doan_wp_084",
+            "doan_wp_085"
+          ]
+        }
+      },
+      "completion": {
+        "type": "TARGET_DEAD",
+        "target": "doan"
+      },
+      "policies": {
+        "pull_policy": "ranged_or_body",
+        "target_wait": {
+          "policy": "bounded_wait",
+          "timeout_ms": 90000
+        },
+        "combat_safety": {
+          "kind": "aura_retreat",
+          "aura_id": 9438,
+          "cast_spell_id": 9435,
+          "radius": 30,
+          "margin": 5,
+          "retreat_points": [
+            "doan_wp_076",
+            "doan_wp_075",
+            "doan_wp_074"
+          ],
+          "verified": true,
+          "evidence": "Installed ScriptDevAI/DBC: Bubble8s, 1s delay+Detonation5s/radius30m; ground escape audit SHA 54b5ed94b4b638de4b74bcba5ed35c27226a804b8aa19bccad8b3cc53416f08b"
+        }
+      }
+    },
+    {
+      "id": "doan_strongbox",
+      "label": "Doan's Strongbox / Scarlet Key",
+      "type": "INTERACT",
+      "required": true,
+      "skippable": false,
+      "verified": true,
+      "timeout_ms": 60000,
+      "retries": 2,
+      "pull_distance": 20,
+      "max_pack": 1,
+      "navigation": {
+        "strategy": "corridor",
+        "destination": "doan_strongbox_wp_001",
+        "staging": "doan_strongbox_wp_001",
+        "arrival_radius": 1.5,
+        "max_z_delta": 1.5,
+        "corridor": {
+          "verified": true,
+          "waypoints": [
+            "doan_strongbox_wp_000",
+            "doan_strongbox_wp_001"
+          ]
+        }
+      },
+      "interaction": {
+        "kind": "LOOT_GO",
+        "target": "doan_strongbox",
+        "postconditions": {
+          "all": [
+            {
+              "type": "HAS_ITEM",
+              "item_id": 7146,
+              "count": 1
+            }
+          ]
+        }
+      },
+      "policies": {
+        "post_combat_resume": "restage"
+      }
+    }
+  ],
+  "admission_bounds": {
+    "minimum": {
+      "x": 233.6719970703125,
+      "y": -226.62399291992188,
+      "z": 15.699901580810547,
+      "o": 0
+    },
+    "maximum": {
+      "x": 273.6719970703125,
+      "y": -186.62399291992188,
+      "z": 21.699901580810547,
+      "o": 0
+    },
+    "verified": true,
+    "evidence": "Audited Library portal614 +verified navmesh entrance; admission tolerance XY20m/Z3m; not navigation geometry"
+  }
+}

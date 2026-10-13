@@ -1,0 +1,1090 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 96
+    },
+    "label": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 96
+    },
+    "map_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4294967295
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "validated": {
+      "type": "boolean"
+    },
+    "entities": {
+      "type": "object",
+      "maxProperties": 256,
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "points": {
+      "type": "object",
+      "maxProperties": 2048,
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/position"
+      }
+    },
+    "required_boss_step_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "minItems": 0,
+      "maxItems": 512,
+      "uniqueItems": true
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      },
+      "minItems": 0,
+      "maxItems": 512
+    },
+    "admission_bounds": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "$ref": "#/$defs/position_ref"
+        },
+        "maximum": {
+          "$ref": "#/$defs/position_ref"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "minimum",
+        "maximum",
+        "verified",
+        "evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "revision",
+    "label",
+    "map_id",
+    "enabled",
+    "validated",
+    "entities",
+    "points",
+    "required_boss_step_ids",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "enabled": {
+            "const": true
+          }
+        },
+        "required": [
+          "enabled"
+        ]
+      },
+      "then": {
+        "properties": {
+          "validated": {
+            "const": true
+          },
+          "steps": {
+            "minItems": 1,
+            "items": {
+              "if": {
+                "properties": {
+                  "required": {
+                    "const": true
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verified": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          },
+          "admission_bounds": {
+            "properties": {
+              "verified": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dungeonclear:route-schema:v1",
+  "title": "DungeonClear route v1",
+  "$comment": "Schema grammar only. Engine semantic/capability validation and runtime evidence remain mandatory.",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_.-]{0,47}$",
+      "maxLength": 48
+    },
+    "position": {
+      "type": "object",
+      "properties": {
+        "map_id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "x": {
+          "type": "number",
+          "minimum": -17066,
+          "maximum": 17066
+        },
+        "y": {
+          "type": "number",
+          "minimum": -17066,
+          "maximum": 17066
+        },
+        "z": {
+          "type": "number"
+        },
+        "o": {
+          "type": "number"
+        },
+        "floor_verified": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z",
+        "o"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "floor_verified": {
+                "const": true
+              }
+            },
+            "required": [
+              "floor_verified"
+            ]
+          },
+          "then": {
+            "required": [
+              "evidence"
+            ]
+          }
+        }
+      ]
+    },
+    "position_ref": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "$ref": "#/$defs/position"
+        }
+      ]
+    },
+    "entity": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "creature",
+            "gameobject"
+          ]
+        },
+        "entry": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "spawn_low": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "dynamic_spawn": {
+          "type": "boolean"
+        },
+        "anchor": {
+          "$ref": "#/$defs/position_ref"
+        },
+        "search_radius": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 60
+        },
+        "authoritative_anchor": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "kind",
+        "entry",
+        "spawn_low",
+        "dynamic_spawn",
+        "anchor",
+        "search_radius",
+        "authoritative_anchor"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "dynamic_spawn": {
+                "const": false
+              }
+            },
+            "required": [
+              "dynamic_spawn"
+            ]
+          },
+          "then": {
+            "properties": {
+              "spawn_low": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4294967295
+              },
+              "authoritative_anchor": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dynamic_spawn": {
+                "const": true
+              }
+            },
+            "required": [
+              "dynamic_spawn"
+            ]
+          },
+          "then": {
+            "properties": {
+              "spawn_low": {
+                "const": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "TARGET_DEAD"
+            },
+            "negate": {
+              "type": "boolean"
+            },
+            "target": {
+              "$ref": "#/$defs/id"
+            }
+          },
+          "required": [
+            "type",
+            "target"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "GO_STATE_EQUALS"
+            },
+            "negate": {
+              "type": "boolean"
+            },
+            "target": {
+              "$ref": "#/$defs/id"
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2
+            }
+          },
+          "required": [
+            "type",
+            "target",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "HAS_ITEM"
+            },
+            "negate": {
+              "type": "boolean"
+            },
+            "item_id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4294967295
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4294967295
+            }
+          },
+          "required": [
+            "type",
+            "item_id",
+            "count"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "INSTANCE_DATA_EQUALS"
+            },
+            "negate": {
+              "type": "boolean"
+            },
+            "key": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            }
+          },
+          "required": [
+            "type",
+            "key",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ALL_GROUP_READY"
+            },
+            "negate": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "QUIET_COMBAT"
+            },
+            "negate": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "all": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/condition"
+              },
+              "minItems": 1,
+              "maxItems": 256
+            }
+          },
+          "required": [
+            "all"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "any": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/condition"
+              },
+              "minItems": 1,
+              "maxItems": 256
+            }
+          },
+          "required": [
+            "any"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "interaction": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "USE_GO",
+            "LOOT_GO",
+            "USE_ITEM_ON_GO",
+            "GOSSIP"
+          ]
+        },
+        "target": {
+          "$ref": "#/$defs/id"
+        },
+        "required_item": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "required_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "gossip_menu_id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "gossip_option_id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "postconditions": {
+          "$ref": "#/$defs/condition"
+        }
+      },
+      "required": [
+        "kind",
+        "target",
+        "postconditions"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "USE_ITEM_ON_GO"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "required_item",
+              "required_count"
+            ]
+          }
+        },
+        {
+          "dependentRequired": {
+            "required_item": [
+              "required_count"
+            ],
+            "required_count": [
+              "required_item"
+            ],
+            "gossip_option_id": [
+              "gossip_menu_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "USE_GO",
+                  "LOOT_GO",
+                  "USE_ITEM_ON_GO"
+                ]
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "gossip_menu_id"
+                  ]
+                },
+                {
+                  "required": [
+                    "gossip_option_id"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "navigation": {
+      "type": "object",
+      "properties": {
+        "strategy": {
+          "enum": [
+            "explicit",
+            "approach_2d",
+            "floor_safe",
+            "corridor",
+            "hold"
+          ]
+        },
+        "destination": {
+          "$ref": "#/$defs/position_ref"
+        },
+        "staging": {
+          "$ref": "#/$defs/position_ref"
+        },
+        "corridor": {
+          "type": "object",
+          "properties": {
+            "waypoints": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/position_ref"
+              },
+              "minItems": 1,
+              "maxItems": 256
+            },
+            "verified": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "waypoints",
+            "verified"
+          ],
+          "additionalProperties": false
+        },
+        "arrival_radius": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 60
+        },
+        "max_z_delta": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "approach": {
+          "type": "object",
+          "properties": {
+            "source": {
+              "$ref": "#/$defs/position_ref"
+            },
+            "target": {
+              "$ref": "#/$defs/id"
+            },
+            "distance": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 60
+            },
+            "floor": {
+              "$ref": "#/$defs/position_ref"
+            }
+          },
+          "required": [
+            "source",
+            "target",
+            "distance",
+            "floor"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "strategy",
+        "arrival_radius",
+        "max_z_delta"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "strategy": {
+                "const": "corridor"
+              }
+            },
+            "required": [
+              "strategy"
+            ]
+          },
+          "then": {
+            "required": [
+              "corridor"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "strategy": {
+                "const": "approach_2d"
+              }
+            },
+            "required": [
+              "strategy"
+            ]
+          },
+          "then": {
+            "required": [
+              "approach"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "strategy": {
+                "const": "floor_safe"
+              }
+            },
+            "required": [
+              "strategy"
+            ]
+          },
+          "then": {
+            "required": [
+              "staging"
+            ]
+          }
+        }
+      ]
+    },
+    "policies": {
+      "type": "object",
+      "properties": {
+        "post_combat_resume": {
+          "enum": [
+            "legacy",
+            "restage",
+            "resume",
+            "next_step"
+          ]
+        },
+        "target_wait": {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "enum": [
+                "legacy",
+                "fail",
+                "bounded_wait",
+                "patrol_wait"
+              ]
+            },
+            "timeout_ms": {
+              "type": "integer",
+              "minimum": 1000,
+              "maximum": 900000
+            }
+          },
+          "required": [
+            "policy",
+            "timeout_ms"
+          ],
+          "additionalProperties": false
+        },
+        "interaction_policy": {
+          "enum": [
+            "legacy",
+            "observed"
+          ]
+        },
+        "completion_policy": {
+          "enum": [
+            "legacy",
+            "world_evidence"
+          ]
+        },
+        "handoff": {
+          "enum": [
+            "none",
+            "observable_successor"
+          ]
+        },
+        "pull_policy": {
+          "enum": [
+            "ranged_or_body",
+            "ranged",
+            "body"
+          ]
+        },
+        "group_wait_timeout_ms": {
+          "type": "integer",
+          "minimum": 10000,
+          "maximum": 600000
+        },
+        "loot_timeout_ms": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 60000
+        },
+        "recovery_timeout_ms": {
+          "type": "integer",
+          "minimum": 10000,
+          "maximum": 600000
+        },
+        "stuck_timeout_ms": {
+          "type": "integer",
+          "minimum": 3000,
+          "maximum": 60000
+        },
+        "combat_safety": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "aura_retreat"
+            },
+            "aura_id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4294967295
+            },
+            "cast_spell_id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4294967295
+            },
+            "radius": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 60
+            },
+            "margin": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "retreat_points": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/position_ref"
+              },
+              "minItems": 1,
+              "maxItems": 16,
+              "uniqueItems": true
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "required": [
+            "kind",
+            "aura_id",
+            "cast_spell_id",
+            "radius",
+            "margin",
+            "retreat_points",
+            "verified",
+            "evidence"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "step": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 96
+        },
+        "type": {
+          "enum": [
+            "MOVE",
+            "STAGING",
+            "PULL",
+            "BOSS",
+            "INTERACT",
+            "WAIT",
+            "EVENT",
+            "LOOT",
+            "RECOVER",
+            "CHECKPOINT",
+            "OPTIONAL_BRANCH"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "skippable": {
+          "type": "boolean"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "navigation": {
+          "$ref": "#/$defs/navigation"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 1,
+          "maxItems": 32,
+          "uniqueItems": true
+        },
+        "preconditions": {
+          "$ref": "#/$defs/condition"
+        },
+        "completion": {
+          "$ref": "#/$defs/condition"
+        },
+        "terminal_completion_any": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 1,
+          "maxItems": 256
+        },
+        "interaction": {
+          "$ref": "#/$defs/interaction"
+        },
+        "timeout_ms": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 900000
+        },
+        "retries": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "pull_distance": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 60
+        },
+        "max_pack": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "checkpoint_id": {
+          "$ref": "#/$defs/id"
+        },
+        "optional_end_id": {
+          "$ref": "#/$defs/id"
+        },
+        "policies": {
+          "$ref": "#/$defs/policies"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "type",
+        "required",
+        "skippable",
+        "verified",
+        "timeout_ms",
+        "retries",
+        "pull_distance",
+        "max_pack"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "required": {
+                "const": true
+              }
+            },
+            "required": [
+              "required"
+            ]
+          },
+          "then": {
+            "properties": {
+              "skippable": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "MOVE",
+                  "STAGING",
+                  "PULL",
+                  "BOSS",
+                  "INTERACT",
+                  "EVENT",
+                  "CHECKPOINT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "navigation"
+            ],
+            "properties": {
+              "navigation": {
+                "required": [
+                  "destination",
+                  "staging"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "BOSS",
+                  "PULL"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "targets"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "INTERACT",
+                  "EVENT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "interaction"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "OPTIONAL_BRANCH"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "optional_end_id"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
